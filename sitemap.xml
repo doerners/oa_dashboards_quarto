@@ -1,45 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/404.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/CODE_OF_CONDUCT.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/LICENSE.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/index.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/404.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/LICENSE.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/index.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/introduction.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/profiles.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/instructor/reference.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/introduction.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/profiles.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/instructor-notes.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-rmd/reference.html</loc>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/reference.html</loc>
   </url>
 </urlset>
