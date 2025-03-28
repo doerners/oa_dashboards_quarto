@@ -3,7 +3,7 @@
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
 ## Authors
-Barbara Löhde [barb-loehd](barb-loehd)
+Barbara Löhde [Barbara Loehde](barb-loehd)
 
 Sophia Dörner [doerners](doerners)
 
