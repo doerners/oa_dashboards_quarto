@@ -3,7 +3,7 @@
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
 ## Authors
-Doerner, Sophia 
+Doerner, Sophia; 
 Loehde, Barbara
 
 ## Note about lesson life cycle stage
