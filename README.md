@@ -1,4 +1,4 @@
-# The Carpentries Workbench Template R Markdown Lesson
+# Open Access Dashboards with
 
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
