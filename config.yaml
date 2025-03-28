@@ -67,6 +67,7 @@ contact: 'doerners@posteo.de'
 # Order of episodes in your lesson
 episodes: 
 - introduction.Rmd
+- dashboards-introduction.Rmd
 
 # Information for Learners
 learners: 
