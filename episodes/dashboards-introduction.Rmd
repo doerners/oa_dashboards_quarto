@@ -27,7 +27,7 @@ Add a new row to your dashboard containing a value box that dispalys the total n
 
 ## Row
 
-```r
+``` r
 n_distinct(unigoe$id[unigoe$publication_year==2024])
 ```
 
