@@ -3,8 +3,8 @@
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
 ## Authors
-barb-loehd
-Doerner
+Barbara Löhde (@barb-loehd)
+Sophia Dörner (@doerners)
 
 ## Note about lesson life cycle stage
 Although the `config.yaml` states the life cycle stage as pre-alpha, **the template is stable and ready to use**. The life cycle stage is preset to `"pre-alpha"` as this setting is appropriate for new lessons initialised using the template.
