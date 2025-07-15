@@ -1,4 +1,4 @@
-# Open Access Dashboards with Quarto
+# Open-Access-Monitoring Dashboards with Quarto
 
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
