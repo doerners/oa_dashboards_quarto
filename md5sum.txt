@@ -8,6 +8,6 @@
 "episodes/dashboards-introduction.Rmd" "6252736ce0ad68a14da57f2d5df9beee" "site/built/dashboards-introduction.md" "2025-07-01"
 "instructors/instructor-notes.md" "cae72b6712578d74a49fea7513099f8c" "site/built/instructor-notes.md" "2025-07-01"
 "learners/reference.md" "1c7cc4e229304d9806a13f69ca1b8ba4" "site/built/reference.md" "2025-07-01"
-"learners/setup.md" "57ae8992aa0b7055987393964e26cdce" "site/built/setup.md" "2025-07-15"
+"learners/setup.md" "f64579d8d79c94664ee644df5d84e9c0" "site/built/setup.md" "2025-07-15"
 "profiles/learner-profiles.md" "60b93493cf1da06dfd63255d73854461" "site/built/learner-profiles.md" "2025-07-01"
 "renv/profiles/lesson-requirements/renv.lock" "fb8b7d9ef8bdd826eec58be9b33d7f83" "site/built/renv.lock" "2025-07-01"

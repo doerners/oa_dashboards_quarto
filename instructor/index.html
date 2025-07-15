@@ -401,9 +401,7 @@ any links that you are not going to use.
  --></tbody></table><p>
       The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
       </p>
-      </section><section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
-tools and the data sets the Learner needs to have installed.</p>
-<section><h2 class="section-heading" id="data-sets">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a></h2>
+      </section><section id="setup"><section><h2 class="section-heading" id="data-set">Data Set<a class="anchor" aria-label="anchor" href="#data-set"></a></h2>
 <hr class="half-width"><!--
 FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
@@ -463,8 +461,8 @@ later. Upgrading to new versions of RStudio in the future will also
 upgrade the bundled Quarto version (<a href="https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html" class="external-link">Posit
 user guide</a>).</p>
 </blockquote>
-<p>Learners won’t need to install Quarto seperately unless to upgrade
-Quarto out of sync with the bundled version in RStudio. For this
+<p><em>Learners won’t need to install Quarto seperately</em> unless to
+upgrade Quarto out of sync with the bundled version in RStudio. For this
 training we will use the bundled version.</p>
 <p>To avoid troubleshooting during the lesson, learners should follow
 the instructions below to download and install everything beforehand. If
@@ -487,91 +485,10 @@ run code written in R.</li>
 <strong>RStudio</strong> is an integrated development environment
 (IDE) that makes using R easier. In this course we use RStudio to
 interact with R.</li>
-</ul><p>If you don’t already have R and RStudio installed, follow the
-instructions for your operating system below. You have to install R
-before you install RStudio.</p>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler1" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler1" aria-expanded="false" aria-controls="collapseSpoiler1">
-  <h3 class="accordion-header" id="headingSpoiler1">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  For Windows
-  </h3>
-</button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
-<div class="accordion-body">
-<ul><li>Download R from the <a href="https://cran.r-project.org/bin/windows/base/release.htm" class="external-link">CRAN
-website</a>.</li>
-<li>Run the <code>.exe</code> file that was just downloaded</li>
-<li>Go to the <a href="https://posit.co/download/rstudio-desktop/#download" class="external-link">RStudio
-download page</a>
-</li>
-<li>Under <em>All Installers and Tarballs</em> select <strong>Windows
-10/11 - RSTUDIO-xxxx.yy.z-zzz.exe</strong> (where x = year, y = month,
-and z represent version numbers)</li>
-<li>Double click the file to install it</li>
-<li>Once it’s installed, open RStudio to make sure it works and you
-don’t get any error messages.</li>
-</ul></div>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler2" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
-  <h3 class="accordion-header" id="headingSpoiler2">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  For MacOS
-  </h3>
-</button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
-<div class="accordion-body">
-<ul><li>Download R from the <a href="https://cran.r-project.org/bin/macosx/" class="external-link">CRAN website</a>.</li>
-<li>Select the <code>.pkg</code> file for the latest R version</li>
-<li>Double click on the downloaded file to install R</li>
-<li>It is also a good idea to install <a href="https://www.xquartz.org/" class="external-link">XQuartz</a> (needed by some
-packages)</li>
-<li>Go to the <a href="https://posit.co/download/rstudio-desktop/#download" class="external-link">RStudio
-download page</a>
-</li>
-<li>Under <em>All Installers and Tarballs</em> select <strong>Mac OS 13+
-- RSTUDIO-xxxx.yy.z-zzz.dmg</strong> (where x = year, y = month, and z
-represent version numbers)</li>
-<li>Double click the file to install RStudio</li>
-<li>Once it’s installed, open RStudio to make sure it works and you
-don’t get any error messages.</li>
-</ul></div>
-</div>
-</div>
-</div>
-<div id="accordionSpoiler3" class="accordion spoiler-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
-  <h3 class="accordion-header" id="headingSpoiler3">
-  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  For Linux
-  </h3>
-</button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
-<div class="accordion-body">
-<ul><li>Download R from the <a href="https://cran.r-project.org/bin/macosx/" class="external-link">CRAN website</a>.</li>
-<li>Select the <code>.pkg</code> file for the latest R version</li>
-<li>Double click on the downloaded file to install R</li>
-<li>It is also a good idea to install <a href="https://www.xquartz.org/" class="external-link">XQuartz</a> (needed by some
-packages)</li>
-<li>Go to the <a href="https://posit.co/download/rstudio-desktop/#download" class="external-link">RStudio
-download page</a>
-</li>
-<li>Under <em>All Installers and Tarballs</em> select <strong>Your
-Version of Linux - RSTUDIO-xxxx.yy.z-zzz.dmg</strong> (where x = year, y
-= month, and z represent version numbers)</li>
-<li>Double click the file to install RStudio</li>
-<li>Once it’s installed, open RStudio to make sure it works and you
-don’t get any error messages.</li>
-</ul></div>
+</ul><p>If you don’t already have R and RStudio installed, follow the <a href="https://carpentries.github.io/workshop-template/#r-1" class="external-link">install
+instructions for your operating system provided by the
+Carpentries</a>.</p>
+<p>You have to install R before you install RStudio.</p>
 </div>
 </div>
 </div>
@@ -643,7 +560,7 @@ regularly use is a good practice.</p>
 <div class="callout-content">
 <p>During the course we will need a number of R packages. Packages
 contain useful R code written by other people. We will use the packages
-<code>here</code>, <code>tidyverse</code>, <code>plotly</code> and
+<code>here</code>, <code>tidyverse</code>, <code>plotly</code>,
 <code>DT</code>, <code>shiny</code>, <code>bslib</code> and
 <code>bsicons</code>.</p>
 <p>To try to install these packages, open RStudio and copy and paste the
