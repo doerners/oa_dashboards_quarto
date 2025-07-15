@@ -284,8 +284,54 @@
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Setup</h1>
       
 
-<p>This is a new lesson built with <a href="https://carpentries.github.io/sandpaper-docs" class="external-link">The Carpentries
-Workbench</a>.</p>
+<p>This is lesson is designed for professionals involved in scholarly
+communication analytics, e.g. in the areas of research, data analysis,
+library and information science and policy, looking to enhance their
+technical skills in dashboard creation for open access monitoring
+activities using the open-source tool <a href="https://quarto.org/" class="external-link">Quarto</a> with <a href="https://www.r-project.org/" class="external-link">R</a> as an example programming
+language in the <a href="https://posit.co/download/rstudio-desktop/" class="external-link">RStudio</a> integrated
+development environment.</p>
+<p>Learners will become familiar with Quarto for dashboard creation.
+Quarto, as an open-source scientific and technical publishing system,
+allows you to generate multiple output formats from a single source
+file, seamlessly integrating text and dynamic content. While Quarto is a
+versatile tool with applications ranging from data visualization to
+reproducible documentation, this lesson will focus specifically on using
+it for creating (interactive) dashboards tailored to open access
+monitoring.</p>
+<section><h2 class="section-heading" id="learning-objectives">Learning Objectives<a class="anchor" aria-label="anchor" href="#learning-objectives"></a></h2>
+<hr class="half-width"><p>By the end of this lesson, learners will be able to:</p>
+<ol style="list-style-type: decimal"><li>Describe what Quarto is and explain how Quarto documents are
+structured.</li>
+<li>Describe what Quarto dashboards are, their key features, and the
+essential components they consist of.</li>
+<li>Apply Markdown syntax to define components and structure content
+within a Quarto dashboard.</li>
+<li>Use R functions to load libraries and import data into the
+dashboard.</li>
+<li>Apply R functions to generate calculations and plots as dashboard
+content.</li>
+<li>Use YAML syntax to style and customize the appearance of the
+dashboard.</li>
+<li>Use YAML syntax and apply R functions to generate interactive
+dashboard content.</li>
+</ol><div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Callout</h3>
+<div class="callout-content">
+<p>If you are a novice learner with little to no experience in
+programming this lesson might be hard to follow. In this case it is
+<strong>highly</strong> recommended to visit a training for novices
+first, e.g. <a href="https://librarycarpentry.github.io/lc-open-refine/" class="external-link">Library
+Carpentry OpenRefine training</a> to learn about data cleaning, <a href="https://librarycarpentry.github.io/lc-r/index.html" class="external-link">Library
+Carpentry Introduction to R</a> to get acquainted with R, <a href="https://librarycarpentry.github.io/lc-python-intro/index.html" class="external-link">Library
+Carpentry Introduction to Python</a> to get acquainted with Python.</p>
+</div>
+</div>
+</div>
 <div id="prereq1" class="callout prereq">
 <div class="callout-square">
 <i class="callout-icon" data-feather="check"></i>
@@ -293,8 +339,29 @@ Workbench</a>.</p>
 <div class="callout-inner">
 <h3 class="callout-title">Prerequisite</h3>
 <div class="callout-content">
-<p>Before coming to his training, learners should - have skills in
-coding in r - be in a good mood</p>
+<p>Before joining this training, learners should meet the following
+criteria.</p>
+<div class="section level3">
+<h3 id="r-or-python">R (or Python)<a class="anchor" aria-label="anchor" href="#r-or-python"></a></h3>
+<ul><li>You have basic knowledge of coding in R (loading libraries and data,
+transforming data, computing values, creating tables and
+visualizations).</li>
+<li>Alternatively you have basic knowledge of coding in Python. Although
+we will use R as an example programming language, Quarto works with
+Python as well.</li>
+<li>You have installed R and RStudio along with some packages before the
+lesson.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="markdown-optional-but-recommended">Markdown (optional but recommended)<a class="anchor" aria-label="anchor" href="#markdown-optional-but-recommended"></a></h3>
+<ul><li>You have basic knowledge of markdown syntax (creating headings,
+links and importing images)</li>
+</ul></div>
+<div class="section level3">
+<h3 id="yaml-optional-but-recommended">YAML (optional but recommended)<a class="anchor" aria-label="anchor" href="#yaml-optional-but-recommended"></a></h3>
+<ul><li>You have basic knowledge of YAML syntax (strings, booleans, nesting,
+files)</li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -302,26 +369,71 @@ coding in r - be in a good mood</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-
-
-      <section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
+</section><section id="setup"><p>FIXME: Setup instructions live in this document. Please specify the
 tools and the data sets the Learner needs to have installed.</p>
 <section><h2 class="section-heading" id="data-sets">Data Sets<a class="anchor" aria-label="anchor" href="#data-sets"></a></h2>
 <hr class="half-width"><!--
 FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
---><p>Download the <a href="https://example.com/FIXME" class="external-link">data zip file</a>
-and unzip it to your Desktop</p>
-</section><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
+--><p>Download the <a href="https://github.com/doerners/oa_dashboards_quarto/data/jct_oal_TA_dataset.zip" class="external-link">data
+zip file</a> and unzip it to your Desktop.</p>
+<p>This file is based on the Journal Checker Tool articles file from the
+<em>OPENBIB: Selected curated open metadata based on OpenAlex</em> data
+set published on <a href="https://doi.org/10.5281/zenodo.15308680" class="external-link">Zenodo</a> under a CC0
+license. The data file was enhanced with open access related data from
+<a href="https://docs.openalex.org/" class="external-link">OpenAlex</a> which are also
+available under a CC0 license.</p>
+<p>The compiled teaching dataset used in this lessons is a CSV formatted
+dataset containing the following variables:</p>
+<table class="table"><colgroup><col width="50%"><col width="50%"></colgroup><thead><tr class="header"><th>column name</th>
+<th>description</th>
+</tr></thead><tbody><tr class="odd"><td>openalex_id</td>
+<td>article identifier given within the OpenAlex database</td>
+</tr><tr class="even"><td>doi</td>
+<td>digital object identifier of the article</td>
+</tr><tr class="odd"><td>issn_l</td>
+<td>linking ISSN of the journal the article was published in</td>
+</tr><tr class="even"><td>ror</td>
+<td>Reasearch Organisation Registry identifier of the corresponding
+author’s affiliated institution</td>
+</tr><tr class="odd"><td>esac_id</td>
+<td>ESAC Registry identifier for the transformative agreement under
+which the article was published</td>
+</tr><tr class="even"><td>start_date</td>
+<td>transformative agreement term start date</td>
+</tr><tr class="odd"><td>end_date</td>
+<td>transformative agreement term end date</td>
+</tr><tr class="even"><td>publication_date</td>
+<td>article publication date</td>
+</tr><tr class="odd"><td>oa_status</td>
+<td>article open access status</td>
+</tr><tr class="even"><td>field</td>
+<td>primary subject field the article was assigned to based on the
+classification of OpenAlex</td>
+</tr><tr class="odd"><td>domain</td>
+<td>primary subject domain the article was assigned to based on the
+classification of OpenAlex</td>
+</tr><tr class="even"><td>institution</td>
+<td>display name of the corresponding author’s affiliated
+institution</td>
+</tr><tr class="odd"><td>publisher</td>
+<td>display name of the publisher the article was published by</td>
+</tr><tr class="even"><td>publication_year</td>
+<td>article publication year</td>
+</tr></tbody></table></section><section><h2 class="section-heading" id="software-setup">Software Setup<a class="anchor" aria-label="anchor" href="#software-setup"></a></h2>
 <hr class="half-width"><p>To follow this lesson learners must have R and RStudio installed on
 their computers. They also need to be able to install a number of R
 packages, create directories, and download files.</p>
+<blockquote>
 <p>A stable release of Quarto is bundled with RStudio v2022.07.1, and
 later. Upgrading to new versions of RStudio in the future will also
 upgrade the bundled Quarto version (<a href="https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html" class="external-link">Posit
-user guide</a>). Learners won’t need to install Quarto seperately unless
-to upgrade Quarto out of sync with the bundled version in RStudio.</p>
+user guide</a>).</p>
+</blockquote>
+<p>Learners won’t need to install Quarto seperately unless to upgrade
+Quarto out of sync with the bundled version in RStudio. For this
+training we will use the bundled version.</p>
 <p>To avoid troubleshooting during the lesson, learners should follow
 the instructions below to download and install everything beforehand. If
 the computer is managed by their organization’s IT department they might
@@ -357,7 +469,7 @@ before you install RStudio.</p>
   For Windows
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
 <div class="accordion-body">
 <ul><li>Download R from the <a href="https://cran.r-project.org/bin/windows/base/release.htm" class="external-link">CRAN
 website</a>.</li>
@@ -383,7 +495,7 @@ don’t get any error messages.</li>
   For MacOS
   </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
 <div class="accordion-body">
 <ul><li>Download R from the <a href="https://cran.r-project.org/bin/macosx/" class="external-link">CRAN website</a>.</li>
 <li>Select the <code>.pkg</code> file for the latest R version</li>
@@ -411,7 +523,7 @@ don’t get any error messages.</li>
   For Linux
   </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
 <div class="accordion-body">
 <ul><li>Download R from the <a href="https://cran.r-project.org/bin/macosx/" class="external-link">CRAN website</a>.</li>
 <li>Select the <code>.pkg</code> file for the latest R version</li>
@@ -434,12 +546,12 @@ don’t get any error messages.</li>
 </div>
 <div class="section level3">
 <h3 id="update-r-and-rstudio">Update R and RStudio<a class="anchor" aria-label="anchor" href="#update-r-and-rstudio"></a></h3>
-<div id="discussion2" class="callout discussion">
+<div id="details-1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Discussion</h3>
+<div id="details-1" class="callout-inner">
+<h3 class="callout-title">Details</h3>
 <div class="callout-content">
 <p>If you already have R and RStudio installed, first check if your R
 version is up to date:</p>
@@ -490,12 +602,12 @@ regularly use is a good practice.</p>
 </div>
 <div class="section level3">
 <h3 id="install-required-r-packages">Install required R packages<a class="anchor" aria-label="anchor" href="#install-required-r-packages"></a></h3>
-<div id="discussion3" class="callout discussion">
+<div id="details-2" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Discussion</h3>
+<div id="details-2" class="callout-inner">
+<h3 class="callout-title">Details</h3>
 <div class="callout-content">
 <p>During the course we will need a number of R packages. Packages
 contain useful R code written by other people. We will use the packages
@@ -513,7 +625,7 @@ the bottom left), then press the <kbd>Enter</kbd> (Windows and Linux) or
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"here"</span>, <span class="st">"tidyverse"</span>, <span class="st">"plotly"</span>, <span class="st">"DT"</span>,<span class="st">"shiny"</span>,<span class="st">"bslib"</span>,<span class="st">"bsicons"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"here"</span>, <span class="st">"tidyverse"</span>, <span class="st">"plotly"</span>, <span class="st">"DT"</span>,<span class="st">"shiny"</span>,<span class="st">"bslib"</span>,<span class="st">"bsicons"</span>,<span class="st">"lubridate"</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Alternatively, you can install the packages using RStudio’s graphical
 user interface by going to <code>Tools &gt; Install Packages</code> and
@@ -531,19 +643,20 @@ by pasting the following code into the console:</p>
 <span><span class="kw">library</span><span class="op">(</span><span class="va">DT</span><span class="op">)</span></span>
 <span><span class="kw">library</span><span class="op">(</span><span class="va">shiny</span><span class="op">)</span></span>
 <span><span class="kw">library</span><span class="op">(</span><span class="va">bslib</span><span class="op">)</span></span>
-<span><span class="kw">library</span><span class="op">(</span><span class="va">bsicons</span><span class="op">)</span></span></code></pre>
+<span><span class="kw">library</span><span class="op">(</span><span class="va">bsicons</span><span class="op">)</span></span>
+<span><span class="kw">library</span><span class="op">(</span><span class="va">lubridate</span><span class="op">)</span></span></code></pre>
 </div>
 <p>If you do not see an error like
 <code>there is no package called ‘...’</code> you are good to go!</p>
 </div>
 <div class="section level3">
 <h3 id="updating-r-packages">Updating R packages<a class="anchor" aria-label="anchor" href="#updating-r-packages"></a></h3>
-<div id="discussion4" class="callout discussion">
+<div id="details-3" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Discussion</h3>
+<div id="details-3" class="callout-inner">
+<h3 class="callout-title">Details</h3>
 <div class="callout-content">
 <p>Generally, it is recommended to keep your R version and all packages
 up to date, because new versions bring improvements and important bug
