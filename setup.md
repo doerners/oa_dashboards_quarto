@@ -12,14 +12,38 @@ FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
 -->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
+Download the [data zip file](https://github.com/doerners/oa_dashboards_quarto/data/jct_oal_TA_dataset.zip) and unzip it to your Desktop. 
+
+This file is based on the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. The data file was enhanced with open access related data from [OpenAlex](https://docs.openalex.org/) which are also available under a CC0 license.
+
+The compiled teaching dataset used in this lessons is a CSV formatted dataset containing the following variables:
+
+| column name | description |
+|-------------|-------------|
+|openalex\_id | article identifier given within the OpenAlex database|
+|doi          | digital object identifier of the article |
+|issn\_l      | linking ISSN of the journal the article was published in |
+|ror          | Reasearch Organisation Registry identifier of the corresponding author's affiliated institution|
+|esac\_id     | ESAC Registry identifier for the transformative agreement under which the article was published|
+|start\_date  | transformative agreement term start date|
+|end\_date    | transformative agreement term end date|
+|publication\_date| article publication date|
+|oa\_status| article open access status|
+|field| primary subject field the article was assigned to based on the classification of OpenAlex|
+|domain| primary subject domain the article was assigned to based on the classification of OpenAlex|
+|institution| display name of the corresponding author's affiliated institution|
+|publisher| display name of the publisher the article was published by|
+|publication\_year| article publication year|
+
 
 ## Software Setup
 
 To follow this lesson learners must have R and RStudio installed on their computers. They also need
 to be able to install a number of R packages, create directories, and download files. 
 
-A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). Learners won't need to install Quarto seperately unless to upgrade Quarto out of sync with the bundled version in RStudio.
+> A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). 
+
+Learners won't need to install Quarto seperately unless to upgrade Quarto out of sync with the bundled version in RStudio. For this training we will use the bundled version.
 
 To avoid troubleshooting during the lesson, learners should follow the instructions below to download and install everything beforehand. If the computer is managed by their organization's IT department they might need help from an IT administrator.
 
@@ -86,6 +110,8 @@ You have to install R before you install RStudio.
 
 ::::::::::::::::::::::::::::::::::::::: discussion
 
+## Details
+
 If you already have R and RStudio installed, first check if your R version is up to date:
 
 * When you open RStudio your R version will be printed in the console on the bottom left. Alternatively, you can type `sessionInfo()` into the console. If your R version is 4.0.0 or later, you don't need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website [for Windows](https://cran.r-project.org/bin/windows/base/), [for MacOS](https://cran.r-project.org/bin/macosx/), or [for Linux](https://cran.r-project.org/bin/linux/)
@@ -108,6 +134,8 @@ While this may sound scary, it is **far more common** to run into issues due to 
 
 ::::::::::::::::::::::::::::::::::::::: discussion
 
+## Details
+
 During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages `here`, `tidyverse`, `plotly` and `DT`, `shiny`, `bslib` and `bsicons`. 
 
 To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the <kbd>Enter</kbd> (Windows and Linux) or <kbd>Return</kbd> (MacOS) to execute the command.
@@ -115,7 +143,7 @@ To try to install these packages, open RStudio and copy and paste the following 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ```r
-install.packages(c("here", "tidyverse", "plotly", "DT","shiny","bslib","bsicons"))
+install.packages(c("here", "tidyverse", "plotly", "DT","shiny","bslib","bsicons","lubridate"))
 ```
 
 Alternatively, you can install the packages using RStudio's graphical user interface by going to `Tools > Install Packages` and typing the names of the packages separated by a comma.
@@ -132,6 +160,7 @@ library(DT)
 library(shiny)
 library(bslib)
 library(bsicons)
+library(lubridate)
 ```
 
 If you do not see an error like `there is no package called ‘...’` you are good to go! 
@@ -139,6 +168,8 @@ If you do not see an error like `there is no package called ‘...’` you are g
 ### Updating R packages
 
 ::::::::::::::::::::::::::::::::::::::: discussion
+
+## Details
 
 Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bug fixes. To update the packages that you have installed, click `Update` in the `Packages` tab in the bottom right panel of RStudio, or go to `Tools > Check for Package Updates...` 
 
