@@ -1,5 +1,5 @@
 name: Suggest an improvement in a specific location
-description: Tell us about how a particular section of the curriculum could be improved
+description: Tell us about how a particular section of the lesson could be improved
 body:
   - type: textarea
     id: details

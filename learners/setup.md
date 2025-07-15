@@ -2,10 +2,7 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
-
-## Data Sets
+## Data Set
 
 <!--
 FIXME: place any data you want learners to use in `episodes/data` and then use
@@ -43,7 +40,7 @@ to be able to install a number of R packages, create directories, and download f
 
 > A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). 
 
-Learners won't need to install Quarto seperately unless to upgrade Quarto out of sync with the bundled version in RStudio. For this training we will use the bundled version.
+*Learners won't need to install Quarto seperately* unless to upgrade Quarto out of sync with the bundled version in RStudio. For this training we will use the bundled version.
 
 To avoid troubleshooting during the lesson, learners should follow the instructions below to download and install everything beforehand. If the computer is managed by their organization's IT department they might need help from an IT administrator.
 
@@ -58,53 +55,11 @@ R and RStudio are two separate pieces of software:
 * **R** is a programming language and software used to run code written in R.
 * **RStudio** is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R. 
   
-If you don't already have R and RStudio installed, follow the instructions for your operating system below.
+If you don't already have R and RStudio installed, follow the [install instructions for your operating system provided by the Carpentries](https://carpentries.github.io/workshop-template/#r-1).
+
 You have to install R before you install RStudio. 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::: spoiler
-
-## For Windows
-
-* Download R from the [CRAN website](https://cran.r-project.org/bin/windows/base/release.htm).
-* Run the `.exe` file that was just downloaded
-* Go to the [RStudio download page](https://posit.co/download/rstudio-desktop/#download)
-* Under *All Installers and Tarballs* select **Windows 10/11 - RSTUDIO-xxxx.yy.z-zzz.exe** (where x = year, y = month, and z represent version numbers)
-* Double click the file to install it
-* Once it's installed, open RStudio to make sure it works and you don't get any error messages.
-  
-:::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-## For MacOS
-
-* Download R from the [CRAN website](https://cran.r-project.org/bin/macosx/).
-* Select the `.pkg` file for the latest R version
-* Double click on the downloaded file to install R
-* It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
-* Go to the [RStudio download page](https://posit.co/download/rstudio-desktop/#download)
-* Under *All Installers and Tarballs* select **Mac OS 13+ - RSTUDIO-xxxx.yy.z-zzz.dmg** (where x = year, y = month, and z represent version numbers)
-* Double click the file to install RStudio
-* Once it's installed, open RStudio to make sure it works and you don't get any error messages.
-
-::::::::::::::::
-
-::::::: spoiler
-
-## For Linux 
-
-* Download R from the [CRAN website](https://cran.r-project.org/bin/macosx/).
-* Select the `.pkg` file for the latest R version
-* Double click on the downloaded file to install R
-* It is also a good idea to install [XQuartz](https://www.xquartz.org/) (needed by some packages)
-* Go to the [RStudio download page](https://posit.co/download/rstudio-desktop/#download)
-* Under *All Installers and Tarballs* select **Your Version of Linux - RSTUDIO-xxxx.yy.z-zzz.dmg** (where x = year, y = month, and z represent version numbers)
-* Double click the file to install RStudio
-* Once it's installed, open RStudio to make sure it works and you don't get any error messages.
-
-::::::::::::::::
 
 ### Update R and RStudio
 
@@ -136,7 +91,7 @@ While this may sound scary, it is **far more common** to run into issues due to 
 
 ## Details
 
-During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages `here`, `tidyverse`, `plotly` and `DT`, `shiny`, `bslib` and `bsicons`. 
+During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages `here`, `tidyverse`, `plotly`, `DT`, `shiny`, `bslib` and `bsicons`. 
 
 To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the <kbd>Enter</kbd> (Windows and Linux) or <kbd>Return</kbd> (MacOS) to execute the command.
 

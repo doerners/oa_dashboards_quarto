@@ -1,5 +1,5 @@
-name: Suggest a curriculum-wide improvement
-description: Tell us about how the content of the curriculum as a whole could be improved
+name: Suggest a lesson-wide improvement
+description: Tell us about how the content of the lesson as a whole could be improved
 body:
   - type: textarea
     id: details
