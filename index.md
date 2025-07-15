@@ -11,7 +11,7 @@ Learners will become familiar with Quarto for dashboard creation. Quarto, as an 
 By the end of this lesson, learners will be able to:
 
 1. Describe what Quarto is and explain how Quarto documents are structured.
-2. Describe what Quarto dashboards are, their key features, and the essential components they consist of.
+2. Describe what Quarto dashboards are, their key features, and the components they consist of.
 3. Apply Markdown syntax to define components and structure content within a Quarto dashboard.
 4. Use R functions to load libraries and import data into the dashboard.
 5. Apply R functions to generate calculations and plots as dashboard content.
