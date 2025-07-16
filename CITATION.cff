@@ -5,7 +5,7 @@
 # ensuring that the author list and other fields remain accurate.
 
 cff-version: 1.2.0
-title: FIXME
+title: Open-Access-Monitoring Dashboards with Quarto
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +13,24 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Sophia
+    family-names: Dörner
+    email: sophia.doerner@sub.uni-goettingen.de
+    affiliation: Göttingen State and University Library, University of Göttingen
+    orcid: 'https://orcid.org/0000-0001-8747-3422'
+  - given-names: Barbara
+    family-names: Löhde
+    email: barbara.loehde@sub.uni-goettingen.de
+    affiliation: Göttingen State and University Library, University of Göttingen
+    orcid: 'https://orcid.org/0009-0006-4444-7105'
+repository-code: 'https://github.com/doerners/oa_dashboards_quarto'
+url: 'https://doerners.github.io/oa_dashboards_quarto/'
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  This lesson is designed for professionals in scholarly communication analytics, including researchers, 
+  librarians, policy officers, and open science advocates, who work with open access (OA) publication data. 
+  Participants will learn to enhance their technical skills in creating dashboards using open-source tools, 
+  specifically Quarto. The lesson assumes basic computational skills, such as working with Markdown, dataframes, 
+  and data visualization in Python or R, as well as a foundational understanding of the OA landscape. 
+  By the end of the lesson, learners will be able to create and customize dashboards to track and visualize 
+  OA metrics, supporting institutional reporting, compliance monitoring, and advocacy for open science.
 license: CC-BY-4.0
