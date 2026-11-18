@@ -2,16 +2,49 @@
 title: Setup
 ---
 
-## Data Set
+## Getting ready
 
-<!--
-FIXME: place any data you want learners to use in `episodes/data` and then use
-       a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
-       link to it, replacing the example.com link.
--->
-Download the [data zip file](https://github.com/doerners/oa_dashboards_quarto/data/jct_oal_TA_dataset.zip) and unzip it to your Desktop. 
+You need to install R and RStudio and download a data file to follow this lesson.
 
-This file is based on the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. The data file was enhanced with open access related data from [OpenAlex](https://docs.openalex.org/) which are also available under a CC0 license.
+### Installing R and RStudio
+
+You need R and RStudio installed and also need to be able to install R packages, create directories, and download files.
+To do this, please make sure you either have administrative rights for your computer or get help for the setup from an IT administrator at your institution.
+
+Several Carpentries lessons already rely on R and RStudio, please see [this section of the workshop template](https://carpentries.github.io/workshop-template/install_instructions/#r-1) for instructions on installing R/RStudio for various operating systems.
+
+- [R/RStudio installation on Windows](https://carpentries.github.io/workshop-template/install_instructions/#r)
+- [R/RStudio installation on MacOS](https://carpentries.github.io/workshop-template/install_instructions/#r)
+- [R/RStudio installation on Linux](https://carpentries.github.io/workshop-template/install_instructions/#r)
+
+R is the programming language we'll use in this lesson to calculate metrics and create visualizations for the dashboard. 
+RStudio is the integrated development environment (IDE) we'll use in this lesson to interact with R and Quarto.
+
+### Installing Quarto
+
+> A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). 
+
+**You will not need to install Quarto seperately** unless you want to upgrade Quarto out of sync with the bundled version in RStudio. Quarto dashboards require Quarto 1.4 or newer. Recent RStudio versions bundle it. 
+To check your version, open the Terminal tab in RStudio and type `quarto --version`. For this lesson we will use the bundled Quarto version.
+
+### Updating R and RStudio
+
+This lesson was developed and tested with R version 4.6.2 and RStudio version 2026.11.0+203. 
+
+If you already have R and RStudio installed, please check if your R version is up to date:
+
+- When you open RStudio your R version will be printed in the console on the bottom left. Alternatively, you can type `sessionInfo()` into the console. If your R version is 4.6.2 or later, you don't need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website [for Windows](https://cran.r-project.org/bin/windows/base/), [for MacOS](https://cran.r-project.org/bin/macosx/), or [for Linux](https://cran.r-project.org/bin/linux/).
+- It is not necessary to remove old versions of R from your system, but if you wish to do so you can check [How do I uninstall R?](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f) 
+- After installing a new version of R, you will have to reinstall all your packages with the new version.
+- To update RStudio to the latest version, open RStudio and click on `Help > Check for Updates`. If a new version is available follow the instruction on screen. By default, RStudio will also automatically notify you of new versions every once in a while.
+
+### Downloading the data
+
+Download the [data zip file](https://github.com/doerners/oa_dashboards_quarto/data/jct_oal_TA_dataset.zip) and unzip it. Make a note of the location (i.e. the folder, your desktop) to which you saved the file. 
+
+This file is based on the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. 
+
+The data file was enhanced with open access related data from [OpenAlex](https://docs.openalex.org/) which are also available under a CC0 license.
 
 The compiled teaching dataset used in this lessons is a CSV formatted dataset containing the following variables:
 
@@ -20,7 +53,7 @@ The compiled teaching dataset used in this lessons is a CSV formatted dataset co
 |openalex\_id | article identifier given within the OpenAlex database|
 |doi          | digital object identifier of the article |
 |issn\_l      | linking ISSN of the journal the article was published in |
-|ror          | Reasearch Organisation Registry identifier of the corresponding author's affiliated institution|
+|ror          | Research Organisation Registry identifier of the corresponding author's affiliated institution|
 |esac\_id     | ESAC Registry identifier for the transformative agreement under which the article was published|
 |start\_date  | transformative agreement term start date|
 |end\_date    | transformative agreement term end date|
@@ -32,108 +65,4 @@ The compiled teaching dataset used in this lessons is a CSV formatted dataset co
 |publisher| display name of the publisher the article was published by|
 |publication\_year| article publication year|
 
-
-## Software Setup
-
-To follow this lesson learners must have R and RStudio installed on their computers. They also need
-to be able to install a number of R packages, create directories, and download files. 
-
-> A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). 
-
-*Learners won't need to install Quarto seperately* unless to upgrade Quarto out of sync with the bundled version in RStudio. For this training we will use the bundled version.
-
-To avoid troubleshooting during the lesson, learners should follow the instructions below to download and install everything beforehand. If the computer is managed by their organization's IT department they might need help from an IT administrator.
-
-### Install R and RStudio
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-R and RStudio are two separate pieces of software: 
-
-* **R** is a programming language and software used to run code written in R.
-* **RStudio** is an integrated development environment (IDE) that makes using R easier. In this course we use RStudio to interact with R. 
-  
-If you don't already have R and RStudio installed, follow the [install instructions for your operating system provided by the Carpentries](https://carpentries.github.io/workshop-template/#r-1).
-
-You have to install R before you install RStudio. 
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-### Update R and RStudio
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-## Details
-
-If you already have R and RStudio installed, first check if your R version is up to date:
-
-* When you open RStudio your R version will be printed in the console on the bottom left. Alternatively, you can type `sessionInfo()` into the console. If your R version is 4.0.0 or later, you don't need to update R for this lesson. If your version of R is older than that, download and install the latest version of R from the R project website [for Windows](https://cran.r-project.org/bin/windows/base/), [for MacOS](https://cran.r-project.org/bin/macosx/), or [for Linux](https://cran.r-project.org/bin/linux/)
-* It is not necessary to remove old versions of R from your system, but if you wish to do so you can check [How do I uninstall R?](https://cran.r-project.org/bin/windows/base/rw-FAQ.html#How-do-I-UNinstall-R_003f) 
-* After installing a new version of R, you will have to reinstall all your packages with the new version. For Windows, there is a package called `installr` that can help you with upgrading your R version and migrate your package library. A similar package called `pacman` can help with updating R packages across platforms.
-* To update RStudio to the latest version, open RStudio and click on `Help > Check for Updates`. If a new version is available follow the instruction on screen. By default, RStudio will also automatically notify you 
-of new versions every once in a while.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::: callout
-
-The changes introduced by new R versions are usually backwards-compatible. That is, your old code should still work after updating your R version. However, if breaking changes happen, it is useful to know that you can have multiple versions of R installed in parallel and that you can switch between them in RStudio by going to `Tools > Global Options > General > Basic`.
-
-While this may sound scary, it is **far more common** to run into issues due to using out-of-date versions of R or R packages. Keeping up with the latest versions of R, RStudio, and any packages you regularly use is a good practice.
-
-:::::::::::::::::::::::::::::
-
-### Install required R packages
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-## Details
-
-During the course we will need a number of R packages. Packages contain useful R code written by other people. We will use the packages `here`, `tidyverse`, `plotly`, `DT`, `shiny`, `bslib` and `bsicons`. 
-
-To try to install these packages, open RStudio and copy and paste the following command into the console window (look for a blinking cursor on the bottom left), then press the <kbd>Enter</kbd> (Windows and Linux) or <kbd>Return</kbd> (MacOS) to execute the command.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-```r
-install.packages(c("here", "tidyverse", "plotly", "DT","shiny","bslib","bsicons","lubridate"))
-```
-
-Alternatively, you can install the packages using RStudio's graphical user interface by going to `Tools > Install Packages` and typing the names of the packages separated by a comma.
-
-R tries to download and install the packages on your machine. 
-
-When the installation has finished, you can try to load the packages by pasting the following code into the console:
-
-```r
-library(here)
-library(tidyverse)
-library(plotly)
-library(DT)
-library(shiny)
-library(bslib)
-library(bsicons)
-library(lubridate)
-```
-
-If you do not see an error like `there is no package called ‘...’` you are good to go! 
-
-### Updating R packages
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-## Details
-
-Generally, it is recommended to keep your R version and all packages up to date, because new versions bring improvements and important bug fixes. To update the packages that you have installed, click `Update` in the `Packages` tab in the bottom right panel of RStudio, or go to `Tools > Check for Package Updates...` 
-
-You should update **all of the packages** required for the lesson, even if you installed them relatively recently.
-
-Sometimes, package updates introduce changes that break your old code, which can be very frustrating. To avoid this problem, you can use a package called `renv`. It locks the package versions you have used for a given project and makes it straightforward to reinstall those exact package version in a new environment, for example after updating your R version or on another computer. However, the details are outside of the scope of this lesson.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-Credits for the installation instructions: [Data Carpentry R Ecology Lesson](https://datacarpentry.github.io/R-ecology-lesson/#Install_R_and_RStudio), [Posit User Guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html), [Quarto Get Started Documentation](https://quarto.org/docs/get-started/)
 

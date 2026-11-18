@@ -2,40 +2,49 @@
 site: sandpaper::sandpaper_site
 ---
 
-This is lesson is designed for professionals involved in scholarly communication analytics, e.g. in the areas of research, data analysis, library and information science and policy, looking to enhance their technical skills in dashboard creation for open access monitoring activities using the open-source tool [Quarto](https://quarto.org/) with [R](https://www.r-project.org/) as an example programming language in the [RStudio](https://posit.co/download/rstudio-desktop/) integrated development environment.
+How open is our institution's research output? Which publishers and transformative agreements
+account for most of our articles? Is our Open Access (OA) share growing? Library and scholarly
+communication teams answer questions like these for diverse audiences: for management, for funders and
+in negotiations with publishers. A spreadsheet or a one-off report answers them once. A
+**dashboard that is generated from code** answers them every time the data is updated.
 
-Learners will become familiar with Quarto for dashboard creation. Quarto, as an open-source scientific and technical publishing system, allows you to generate multiple output formats from a single source file, seamlessly integrating text and dynamic content. While Quarto is a versatile tool with applications ranging from data visualization to reproducible documentation, this lesson will focus specifically on using it for creating (interactive) dashboards tailored to open access monitoring. 
+This workshop explores how to build such a dashboard for OA monitoring with
+[Quarto](https://quarto.org/) and the [R programming language](https://www.r-project.org/) in
+[RStudio](https://posit.co/download/rstudio-desktop/). Quarto is an open-source scientific and
+technical publishing system: you write text, layout instructions and code in one plain-text
+file, and Quarto turns it into a finished document.
+
+The lesson is designed for **library and information professionals who work with open access and scholarly communication** 
+and who have little or no programming experience. It combines programming and professional skills: 
+learners build a dashboard step by step with code and all exercises are based on tasks and topics from OA practice.
 
 ## Learning Objectives
 
 By the end of this lesson, learners will be able to:
 
-1. Describe what Quarto is and explain how Quarto documents are structured.
-2. Describe what Quarto dashboards are, their key features, and the components they consist of.
-3. Apply Markdown syntax to define components and structure content within a Quarto dashboard.
-4. Use R functions to load libraries and import data into the dashboard.
-5. Apply R functions to generate calculations and plots as dashboard content.
-6. Use YAML syntax to style and customize the appearance of the dashboard.
-7. Use YAML syntax and apply R functions to generate interactive dashboard content.
-
-::::::::::::::::::::::::::::: callout
-
-If you are a novice learner with little to no experience in programming this lesson might be hard to follow. In this case it is **highly** recommended to visit a training for novices first, e.g. [Library Carpentry OpenRefine training](https://librarycarpentry.github.io/lc-open-refine/) to learn about data cleaning, [Library Carpentry Introduction to R](https://librarycarpentry.github.io/lc-r/index.html) to get acquainted with R, [Library Carpentry Introduction to Python](https://librarycarpentry.github.io/lc-python-intro/index.html) to get acquainted with Python.
-
-:::::::::::::::::::::::::::::
+1. Describe what Quarto is, how a Quarto document is structured, and what a Quarto dashboard is
+   used for in OA monitoring.
+2. Apply Markdown syntax to structure text and to define the pages, rows, columns and cards of a
+   dashboard.
+3. Use R to load packages and data, filter publication records for one institution, and
+   calculate OA indicators.
+4. Create value boxes and plots from calculated OA indicators as dashboard content.
+5. Create a searchable table.
+6. Use YAML syntax to style and customise the appearance of the dashboard.
+7. Render the dashboard, update it with new data and share it.
 
 :::::: prereq
-Before joining this training, learners should meet the following criteria.
+This training **does not** assume or require any prerequisite programming skills.
 
-### R (or Python) 
-- You have basic knowledge of coding in R (loading libraries and data, transforming data, computing values, creating tables and visualizations).
-- Alternatively you have basic knowledge of coding in Python. Although we will use R as an example programming language, Quarto works with Python as well. 
-- You have installed R and RStudio along with some packages before the lesson.
+You need a laptop on which you can install software. Please complete the
+[setup instructions](learners/setup.md) below **before** the workshop.
 
-### Markdown (optional but recommended)
-- You have basic knowledge of markdown syntax (creating headings, links and importing images)
+The training builds on several software components (Markdown, R/RStudio, YAML, Quarto), but
+introduces them only at the minimum level needed to successfully build an OA dashboard in Quarto.
+If you would like a more thorough introduction to these topics, The Carpentries offer dedicated
+lessons, like:
 
-### YAML (optional but recommended)
-- You have basic knowledge of YAML syntax (strings, booleans, nesting, files)
-
+- [Introduction to R](https://librarycarpentry.github.io/lc-r/)
+- [Introduction to Reproducible Publications with Quarto](https://carpentries-incubator.github.io/reproducible-publications-quarto/)
 :::::::::
+
