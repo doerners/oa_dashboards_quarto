@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/01-intro-to-quarto-dashboards.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/02-markdown.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/03-r-rstudio.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/04-dashboard-skeleton.html</loc>
+  </url>
+  <url>
     <loc>https://doerners.github.io/oa_dashboards_quarto/404.html</loc>
   </url>
   <url>
@@ -23,6 +35,18 @@
   </url>
   <url>
     <loc>https://doerners.github.io/oa_dashboards_quarto/index.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/01-intro-to-quarto-dashboards.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/02-markdown.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/03-r-rstudio.html</loc>
+  </url>
+  <url>
+    <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/04-dashboard-skeleton.html</loc>
   </url>
   <url>
     <loc>https://doerners.github.io/oa_dashboards_quarto/instructor/404.html</loc>
