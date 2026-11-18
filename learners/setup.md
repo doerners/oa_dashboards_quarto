@@ -24,7 +24,7 @@ RStudio is the integrated development environment (IDE) we'll use in this lesson
 
 > A stable release of Quarto is bundled with RStudio v2022.07.1, and later. Upgrading to new versions of RStudio in the future will also upgrade the bundled Quarto version ([Posit user guide](https://docs.posit.co/ide/user/ide/guide/documents/quarto-project.html)). 
 
-**You will not need to install Quarto seperately** unless you want to upgrade Quarto out of sync with the bundled version in RStudio. Quarto dashboards require Quarto 1.4 or newer. Recent RStudio versions bundle it. 
+**You will not need to install Quarto separately** unless you want to upgrade Quarto out of sync with the bundled version in RStudio. Quarto dashboards require Quarto 1.4 or newer. Recent RStudio versions bundle it. 
 To check your version, open the Terminal tab in RStudio and type `quarto --version`. For this lesson we will use the bundled Quarto version.
 
 ### Updating R and RStudio
@@ -40,13 +40,13 @@ If you already have R and RStudio installed, please check if your R version is u
 
 ### Downloading the data
 
-Download the [data zip file](https://github.com/doerners/oa_dashboards_quarto/raw/refs/heads/main/data/jct_oal_TA_dataset.zip) and unzip it. Make a note of the location (i.e. the folder, your desktop) to which you saved the file. 
+Download the [dataset CSV file](https://github.com/doerners/oa_dashboards_quarto/raw/refs/heads/main/data/jct_oal_TA_dataset.csv). Make a note of the location (i.e. the folder, your desktop) to which you saved the file. 
 
-This file is based on the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. 
+This file is a subset of the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. 
 
-The data file was enhanced with open access related data from [OpenAlex](https://docs.openalex.org/) which are also available under a CC0 license.
+The data file was enhanced with open access related data from [OpenAlex](https://help.openalex.org/data/) which are also available under a CC0 license.
 
-The compiled teaching dataset used in this lessons is a CSV formatted dataset containing the following variables:
+The compiled teaching dataset used in this lesson is a CSV formatted dataset containing the following variables:
 
 | column name | description |
 |-------------|-------------|
