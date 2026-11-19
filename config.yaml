@@ -72,6 +72,9 @@ episodes:
 - 04-dashboard-skeleton.md
 - 05-oa-data.Rmd
 - 06-value-boxes-and-plots.Rmd
+- 07-interactive-table.Rmd
+- 08-styling.md
+- 09-render-and-share.md
 
 # Information for Learners
 learners: 

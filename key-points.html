@@ -312,6 +312,42 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush8">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading8">
+        <a href="07-interactive-table.html">7. An Interactive Table</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush9">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading9">
+        <a href="08-styling.html">8. Styling the Dashboard</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush10">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading10">
+        <a href="09-render-and-share.html">9. Rendering, Updating and Sharing</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -468,6 +504,49 @@ proportion of <code>TRUE</code> values</li>
 </li>
 <li>The same <code>group_by()</code> + <code>summarise()</code> +
 <code>ggplot()</code> pattern works for any grouping column</li>
+</ul></section><section id="07-interactive-table"><h2 class="section-heading"><a href="07-interactive-table.html">An Interactive Table</a></h2>
+<hr class="half-width">
+<ul>
+<li>Prepare the data frame first (<code>group_by()</code> +
+<code>summarise()</code> + <code>arrange()</code>), then display it</li>
+<li>
+<code>DT::datatable()</code> turns a data frame into a sortable,
+searchable table</li>
+<li>Arguments like <code>rownames</code>, <code>colnames</code> and
+<code>filter</code> adapt the table appearance</li>
+<li>
+<code>is.na()</code> finds missing values;
+<code>filter(!is.na(column))</code> removes them</li>
+</ul></section><section id="08-styling"><h2 class="section-heading"><a href="08-styling.html">Styling the Dashboard</a></h2>
+<hr class="half-width">
+<ul>
+<li>Set <code>theme</code> and <code>logo</code> inside
+<code>dashboard:</code> in the YAML header to style the whole dashboard
+at once</li>
+<li>Value box <code>color</code> options (<code>primary</code>,
+<code>success</code>, <code>warning</code>, …) automatically match your
+theme</li>
+<li>
+<code>ggplot2</code> charts need their own styling, such as
+<code>theme_minimal()</code>
+</li>
+<li>A named vector of colours, passed to
+<code>scale_fill_manual()</code>, gives each OA status a consistent
+colour</li>
+<li>
+<code>format(x, big.mark = ",")</code> adds thousands separators to
+numbers you display</li>
+</ul></section><section id="09-render-and-share"><h2 class="section-heading"><a href="09-render-and-share.html">Rendering, Updating and Sharing</a></h2>
+<hr class="half-width">
+<ul>
+<li>
+<strong>Render</strong> runs all code and writes an HTML file;
+<code>embed-resources: true</code> makes it a single shareable file</li>
+<li>To update the dashboard, replace the data and render again; to
+change the institution, change the ROR ID in <code>my_ror</code>
+</li>
+<li>A dashboard can be shared as a single HTML file, or published on
+Quarto Pub or GitHub Pages</li>
 </ul></section>
 </div>
     </main>
