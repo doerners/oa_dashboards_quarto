@@ -106,6 +106,7 @@ of a chunk. Each sets one `key: value` pair. Here, `title`, `icon` and `color` s
 #| title: "Total Publications"
 #| icon: book
 #| color: primary
+
 "1,234"
 ```
 
@@ -114,6 +115,7 @@ of a chunk. Each sets one `key: value` pair. Here, `title`, `icon` and `color` s
 #| title: "Open Access Publications"
 #| icon: unlock
 #| color: success
+
 "765"
 ```
 
@@ -122,6 +124,7 @@ of a chunk. Each sets one `key: value` pair. Here, `title`, `icon` and `color` s
 #| title: "Open Access Share"
 #| icon: percent
 #| color: warning
+
 "62%"
 ```
 ````
@@ -155,6 +158,7 @@ card a title:
 
 ```{r}
 #| title: "Open Access Share by Publication Year"
+
 "The chart will go here."
 ```
 ````
@@ -166,15 +170,15 @@ see a wide card with your placeholder text below the value boxes.
 
 Cards are not limited to code output. A card that contains Markdown is created with a `.card`
 div: a block that starts and ends with three colons. You have already learned the image syntax in
-the Markdown episode. Add the right column with an image of the Open Access logo, including alt
+the Markdown episode. We now add a `.card` div to the right column with an image taken from the German Open Access Monitor, including alt
 text:
 
 ````markdown
 ### Column {width="35%"}
 
-::: {.card title="About Open Access"}
+::: {.card title="Creative Commons Licences"}
 
-![Open Access logo, an open padlock](https://commons.wikimedia.org/wiki/Special:FilePath/Open_Access_logo_PLoS_transparent.svg)
+![CC Licences per OA Status, source: [German Open Access Monitor](https://open-access-monitor.de/open-access)](fig/oam_cc_licences.png)
 
 :::
 ````
