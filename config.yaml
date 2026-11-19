@@ -70,6 +70,8 @@ episodes:
 - 02-markdown.md
 - 03-r-rstudio.Rmd
 - 04-dashboard-skeleton.md
+- 05-oa-data.Rmd
+- 06-value-boxes-and-plots.Rmd
 
 # Information for Learners
 learners: 
