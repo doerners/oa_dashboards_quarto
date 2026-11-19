@@ -395,11 +395,6 @@ library(tidyverse)
 library(DT)
 ```
 
-``` error
-Error in `library()`:
-! there is no package called 'DT'
-```
-
 Nothing visible happens when a package loads successfully (aside from some startup messages), but
 afterwards extra functions are available that were not there before, like the `dplyr` verbs we will use 
 in the next sections. We load `DT` already now, even though we only use it in a later episode. If both lines run
