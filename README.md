@@ -1,11 +1,13 @@
-# Open-Access-Monitoring Dashboards with Quarto
+# Open Access Monitoring Dashboards with Quarto
 
 This lesson is a template lesson that uses [The Carpentries Workbench][workbench].
 
-## Authors
-Barbara Löhde ([barb-loehd](https://github.com/barb-loehd))
+## Authors & Maintainer(s)
 
-Sophia Dörner ([doerners](https://github.com/doerners))
+Current maintainers of this lesson are:
+
+- Sophia Dörner ([doerners](https://github.com/doerners))
+- Barbara Löhde ([barb-loehd](https://github.com/barb-loehd))
 
 ## Note about lesson life cycle stage
 Although the `config.yaml` states the life cycle stage as pre-alpha, **the template is stable and ready to use**. The life cycle stage is preset to `"pre-alpha"` as this setting is appropriate for new lessons initialised using the template.
