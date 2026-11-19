@@ -123,7 +123,7 @@
     <a id="search-button-nav" class="btn btn-primary" href="aio.html" role="button" aria-label="Search the All In One page">Search the All In One page</a>
   </div><!--/div.container-fluid -->
 </nav><aside class="col-md-12 lesson-progress"><div class="progress incubator">
-    <div class="progress-bar incubator" role="progressbar" style="width: 32%" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">32%</div>
+    <div class="progress-bar incubator" role="progressbar" style="width: 19%" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100" aria-label="Lesson Progress">19%</div>
   </div>
 </aside><div class="container">
       <div class="row">
@@ -260,6 +260,24 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="05-oa-data.html">5. Starting with OA Data</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="06-value-boxes-and-plots.html">6. Value Boxes and Plots</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -332,7 +350,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Introduction to R and RStudio</h1>
-        <p>Last updated on 2026-11-18 |
+        <p>Last updated on 2026-11-19 |
 
         <a href="https://github.com/doerners/oa_dashboards_quarto/edit/main/episodes/03-r-rstudio.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -887,12 +905,6 @@ this line belongs in a chunk:</p>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="va">DT</span><span class="op">)</span></span></code></pre>
 </div>
-<div class="codewrapper">
-<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="error" tabindex="0"><code>Error in `library()`:
-! there is no package called 'DT'</code></pre>
-</div>
 <p>Nothing visible happens when a package loads successfully (aside from
 some startup messages), but afterwards extra functions are available
 that were not there before, like the <code>dplyr</code> verbs we will
@@ -926,7 +938,7 @@ argument. This lets you chain several steps together, left to right,
 instead of nesting functions inside each other. It is built into R
 itself (since R 4.1), so you do not need to load any package to use
 it.</p>
-<div class="codewrapper sourceCode" id="cb37">
+<div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -941,7 +953,7 @@ it.</p>
 <code>round(mean(articles$citations), 1)</code>, but it reads left to
 right, in the order the steps actually happen. When you chain several
 steps, start a new line after each pipe to keep the code readable:</p>
-<div class="codewrapper sourceCode" id="cb39">
+<div class="codewrapper sourceCode" id="cb38">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -993,7 +1005,7 @@ operator <code>|&gt;</code> instead of nesting the two functions.</p>
 </button>
 <div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb41">
+<div class="codewrapper sourceCode" id="cb40">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1018,7 +1030,7 @@ English. We keep using the <code>articles</code> data frame from
 before.</p>
 <p><strong><code>filter()</code></strong> keeps only the rows that match
 a condition:</p>
-<div class="codewrapper sourceCode" id="cb43">
+<div class="codewrapper sourceCode" id="cb42">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1034,7 +1046,7 @@ a condition:</p>
 </div>
 <p><strong><code>select()</code></strong> keeps only the columns you
 name:</p>
-<div class="codewrapper sourceCode" id="cb45">
+<div class="codewrapper sourceCode" id="cb44">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1054,7 +1066,7 @@ name:</p>
 </div>
 <p><strong><code>mutate()</code></strong> adds a new column (or changes
 an existing one):</p>
-<div class="codewrapper sourceCode" id="cb47">
+<div class="codewrapper sourceCode" id="cb46">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1104,7 +1116,7 @@ most common early mistakes in R.</p>
 <p><strong><code>arrange()</code></strong> sorts the rows by the values
 of a column in ascending order (wrap the column in <code>desc()</code>
 for descending order):</p>
-<div class="codewrapper sourceCode" id="cb49">
+<div class="codewrapper sourceCode" id="cb48">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1122,7 +1134,7 @@ for descending order):</p>
 5 Paper A      gold        12
 6 Paper C    closed        20</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb51">
+<div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1144,7 +1156,7 @@ for descending order):</p>
 is a pair you will use a lot. <code>group_by()</code> splits the data
 into groups, and <code>summarise()</code> then calculates one or more
 summary values per group:</p>
-<div class="codewrapper sourceCode" id="cb53">
+<div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1185,7 +1197,7 @@ columns.</p>
 </button>
 <div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb55">
+<div class="codewrapper sourceCode" id="cb54">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1226,7 +1238,7 @@ Try <code>summarise(count = n())</code>.)</p>
 </button>
 <div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb57">
+<div class="codewrapper sourceCode" id="cb56">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -1336,8 +1348,8 @@ any links that you are not going to use.
   "url": "https://doerners.github.io/oa_dashboards_quarto/03-r-rstudio.html",
   "identifier": "https://doerners.github.io/oa_dashboards_quarto/03-r-rstudio.html",
   "dateCreated": "2026-11-16",
-  "dateModified": "2026-11-18",
-  "datePublished": "2026-11-18"
+  "dateModified": "2026-11-19",
+  "datePublished": "2026-11-19"
 }
 
   </script><script>
