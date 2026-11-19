@@ -40,7 +40,7 @@ If you already have R and RStudio installed, please check if your R version is u
 
 ### Downloading the data
 
-Download the [dataset CSV file](https://github.com/doerners/oa_dashboards_quarto/raw/refs/heads/main/data/jct_oal_TA_dataset.csv). Make a note of the location (i.e. the folder, your desktop) to which you saved the file. 
+Download the [dataset ZIP file](https://github.com/doerners/oa_dashboards_quarto/raw/refs/heads/main/data/jct_oal_TA_dataset.zip). Make a note of the location (i.e. the folder, your desktop) to which you saved the file. 
 
 This file is a subset of the Journal Checker Tool articles file from the *OPENBIB: Selected curated open metadata based on OpenAlex* data set published on [Zenodo](https://doi.org/10.5281/zenodo.15308680) under a CC0 license. 
 
